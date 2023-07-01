@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.aboutus {
+  height: 90vh;
+  background: black;
+  color: white;
+}
+.aboutus-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background: #1B1919;
+    height: 90%;
+}
+
+
+.about-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.about-right h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  color: #11B5FC;
+
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-left h3 {
+  margin-left: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.about-details {
+  display: flex;
+  gap: 100px;
+}
+.about-details p {
+  color: #fff;
+  font-size: 20px;
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.about-details p span {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-years {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+
+.months-experience {
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.months-project {
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.aboutdetails-left,
+.aboutdetails-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

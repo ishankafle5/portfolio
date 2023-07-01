@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    position: relative;
+    background: #000;
+    /* overflow: hidden; */
+    /* padding: 20px; */
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    position: relative;
+}
+
+.navigation nav{
+    position: fixed;
+    background: black;
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+
+}
+.nightlight{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    margin-left: 90%;
+    border-radius: 50px;
+    background: #11B5FC;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nightlight img{
+    margin: auto 5px;
+    width: 30px;
+
+}
+
+.navigation nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.navigation nav ul li{
+    color: #FFF;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    list-style: none;
+}
+
+@media screen and (max-width:415px) {
+    .navigation{
+        display: none;
+    }
+    
+}
