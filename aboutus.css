@@ -106,3 +106,54 @@
   flex-direction: column;
   gap: 30px;
 }
+
+@media screen and (max-width:416px) {
+    .aboutus{
+        /* background: yellow; */
+
+    }
+
+    .aboutus-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 0px;
+    }
+
+    .about-right{
+        background: blue;
+        flex-direction: column;
+        width: 100%;
+        height: 70px;
+        
+    }
+
+    .about-right h3{
+        font-size: 30px;
+    }
+
+    .about-left{
+        background-color: green;
+        width: 100%;
+    }
+
+    .about-left h3{
+        margin: 0 0 0 10px;
+        font-size: 20px;
+    }
+    .about-details{
+        gap: 5px;
+    }
+    .about-details p{
+        font-size:15px;
+
+    }
+
+    .about-details p span{
+        font-size: 15px;
+
+    }
+}
+
+
