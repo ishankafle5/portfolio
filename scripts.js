@@ -26,9 +26,21 @@ var typewriter = new Typewriter(app, {
 typewriter.typeString('Software Developer_')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('Web Developer_')
+    .typeString('Lifelong Learner')
     .pauseFor(1000)
-    .deleteChars(15 )
-    .typeString('Application Developer_')
+    .deleteAll()
+    .typeString('Problem Solver')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('Dream Chaser')
     .pauseFor(1000)
     .start();
+
+
+    // "Lifelong Learner",
+    //                 "Web Developer",
+    //                 "Android Dev",
+    //                 "Passionate Gamer",
+    //                 "Problem Solver",
+    //                 "Curious Explorer",
+    //                 "Dream Chaser",
