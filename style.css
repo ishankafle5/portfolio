@@ -8,29 +8,27 @@
 }
 
 .container{
-    position: relative;
-    background: #000;
-    /* overflow: hidden; */
-    /* padding: 20px; */
+    /* position: relative; */
+    background:  rgb(12, 12, 12);;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
-.navigation{
+
+.container .nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    position: relative;
-}
-
-.navigation nav{
-    position: fixed;
-    background: black;
-    height: 10vh;
+    background: rgb(12, 12, 12);
+    height: 100px;
+    /* position: fixed; */
+   
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid white; */
 
 }
 .nightlight{
@@ -52,16 +50,16 @@
 
 }
 
-.navigation nav ul{
+.container .nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 150px;
 }
 
-.navigation nav ul li{
+.container .nav ul li{
     color: #FFF;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -69,8 +67,6 @@ line-height: normal;
 }
 
 @media screen and (max-width:415px) {
-    .navigation{
-        display: none;
-    }
+   
     
 }
