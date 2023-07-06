@@ -16,10 +16,39 @@
   align-items: center;
   width: 100%;
 }
-
-.images img {
-  width:  300px;
+.images{
+  overflow: hidden;
 }
+.images img {
+  width:  250px;
+}
+
+.images img:hover{
+  /* transform: scale(1.1);*/
+
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.images{
+  border-radius: 50px;
+  border: 0px solid #eaff31;
+  position:-webkit-sticky;
+  /* display: none; */
+
+}
+
+.images:hover{
+  box-sizing: border-box;
+  border: 3px solid #b8ea2d;
+  border-radius: 50px;
+}
+.image img::after{
+  transform: scale(1);
+
+}
+
+images
 .home-left {
   display: flex;
   flex-direction: column;
