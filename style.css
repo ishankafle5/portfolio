@@ -4,70 +4,151 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* background-color: green; */
 
 }
 
 .container{
-    /* position: relative; */
-    background:  rgb(12, 12, 12);;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
+    position: relative;
+    background: #000;
 }
 
 
-.container .nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(12, 12, 12);
-    height: 100px;
-    /* position: fixed; */
-   
-    display: flex;
+nav{
+    background: #0082e6;
+    height: 80px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    font-family: montserrat;
+    position: fixed;
+    top: 0;
 
 }
-.nightlight{
-    position: absolute;
-    width: 90px;
-    height: 40px;
-    margin-left: 90%;
-    border-radius: 50px;
-    background: #11B5FC;
-    padding: 5px;
+
+label.logo{
+    color: white;
+    font-size:35px ;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:17px;
+    text-transform:uppercase;
+    padding:7px 13px;
+    border-radius:3px;
+text-decoration: none;    
+
+}
+
+a.active,a:hover{
+    background:#1b9bff;
+    transition:.5s;
+
+}
+.checkbutton{
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-}
-
-.nightlight img{
-    margin: auto 5px;
-    width: 30px;
-
-}
-
-.container .nav ul{
-    display: flex;
-    align-items: center;
+    flex-direction:column;
+    gap:3px;
+    height: 100%;
     justify-content: center;
-    gap: 150px;
 }
 
-.container .nav ul li{
-    color: #FFF;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-    list-style: none;
+.checkbutton span{
+    display: inline-block;
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+
 }
 
-@media screen and (max-width:415px) {
-   
+.checkbutton{
+    font-size:30px;
+    color: white;
+    float:right;
+    margin-right: 40px;
+    display: none;
+
+}
+
+
+.maincontainer{
+    margin-top: 80px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media screen and  (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
     
+}
+
+
+@media screen and (max-width:999px) {
+    .checkbutton{
+        display: flex;
+        flex-direction:column;
+        gap:4px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        /* top: 80px; */
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition:all .5s;
+    }
+    ul.active{
+        top: 80px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height:30px;
+
+    }
+
+    nav ul li a{
+        font-size:20px;
+
+    }
+
+    a:hover,a.active{
+        background:none;
+        color:#0082e6;
+
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
 }

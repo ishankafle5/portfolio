@@ -36,11 +36,9 @@ typewriter.typeString('Software Developer_')
     .pauseFor(1000)
     .start();
 
-
-    // "Lifelong Learner",
-    //                 "Web Developer",
-    //                 "Android Dev",
-    //                 "Passionate Gamer",
-    //                 "Problem Solver",
-    //                 "Curious Explorer",
-    //                 "Dream Chaser",
+ 
+    const menuBtn = document.querySelector('#checkbutton');
+    const items = document.querySelector('nav ul')
+    menuBtn.addEventListener('click',()=>{
+        items.classList.toggle('active')
+    })
